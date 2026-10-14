@@ -45,5 +45,6 @@ demo:
 	cd $(RUST_DIR) && cargo run --quiet -- infer -in ../samples/redis.trace
 
 clean:
+	@echo "(also removes the generated trace files)"
 	rm -rf $(BIN_DIR)
 	cd $(RUST_DIR) && cargo clean
